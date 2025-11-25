@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/common.css">
+    <link rel="stylesheet" href="estilo/transacoes.css">
+    <title>NewBank - Transações</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/Captura de tela 2025-11-04 152357.png" alt="Logo do NewBank">
+        <h2>NewBank</h2>
+        <nav class="main-nav">
+            <a href="contas.html">Minhas Contas</a>
+            <a href="transacoes.html" class="active">Transações</a>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="dashboard">
+            <h1>Histórico de Transações</h1>
+            <div class="transactions-container">
+                <div class="filter-section">
+                    <select class="filter-select">
+                        <option value="todas">Todas as Contas</option>
+                        <option value="corrente">Conta Corrente</option>
+                        <option value="poupanca">Conta Poupança</option>
+                    </select>
+                    <input type="date" class="filter-date">
+                </div>
+
+                <div class="transactions-list">
+                    <div class="transaction income">
+                        <div class="transaction-info">
+                            <h3>Depósito Recebido</h3>
+                            <p>De: João Silva</p>
+                            <p class="date">04/11/2025</p>
+                        </div>
+                        <div class="transaction-value">
+                            + R$ 1.000,00
+                        </div>
+                    </div>
+
+                    <div class="transaction expense">
+                        <div class="transaction-info">
+                            <h3>Transferência Enviada</h3>
+                            <p>Para: Maria Santos</p>
+                            <p class="date">03/11/2025</p>
+                        </div>
+                        <div class="transaction-value">
+                            - R$ 500,00
+                        </div>
+                    </div>
+
+                    <div class="transaction income">
+                        <div class="transaction-info">
+                            <h3>Rendimento Poupança</h3>
+                            <p>Rendimento Mensal</p>
+                            <p class="date">01/11/2025</p>
+                        </div>
+                        <div class="transaction-value">
+                            + R$ 50,00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
